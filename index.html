@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Creative Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 data-aos="fade-down">Lucas Creative Studio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I’m a passionate graphic designer creating bold, modern, and effective visual content.</p>
+  </section>
+
+  <section id="portfolio" data-aos="fade-up">
+    <h2>My Work</h2>
+    <div class="gallery">
+      <img src="images/design1.jpg" alt="Design 1">
+      <img src="images/design2.jpg" alt="Design 2">
+      <img src="images/design3.jpg" alt="Design 3">
+    </div>
+    <h3>Slideshow Preview</h3>
+    <div id="slideshow" data-aos="fade-up">
+      <img src="images/design1.jpg" class="slide" alt="Slide 1" />
+      <img src="images/design2.jpg" class="slide" alt="Slide 2" />
+      <img src="images/design3.jpg" class="slide" alt="Slide 3" />
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="socials">
+      <a href="https://instagram.com/yourname" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/yourname" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/yourname" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lucas Creative Studio</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
+</body>
+</html>
