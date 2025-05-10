@@ -7,10 +7,23 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
-  background-image: url('https://www.transparenttextures.com/patterns/diagonal-lines.png');
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #333;
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8); /* white see-through */
+  z-index: -1;
 }
 
 /* Header */
@@ -32,7 +45,7 @@ nav a {
   transition: color 0.3s ease;
 }
 nav a:hover {
-  color: #ffa500;
+  color: #e91e63;
 }
 
 /* Section layout */
@@ -99,7 +112,7 @@ textarea {
   resize: vertical;
 }
 button[type="submit"] {
-  background: #ffa500;
+  background: #e91e63;
   color: white;
   border: none;
   padding: 14px;
@@ -124,7 +137,7 @@ button[type="submit"]:hover {
   transition: color 0.3s ease;
 }
 .socials a:hover {
-  color: #ffa500;
+  color: #e91e63;
 }
 
 /* Footer */
@@ -153,7 +166,7 @@ footer {
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 #backToTop:hover {
-  background: #ffa500;
+  background: #e91e63;
 }
 
 /* Dark Mode Toggle */
@@ -180,7 +193,7 @@ body.dark footer {
 }
 body.dark nav a,
 body.dark .socials a {
-  color: #ffa500;
+  color: #e91e63;
 }
 body.dark section {
   background: rgba(20, 20, 20, 0.85);
