@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -18,10 +18,15 @@ header {
   text-align: center;
 }
 
+nav {
+  margin-top: 10px;
+}
+
 nav a {
   color: #fff;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: 600;
 }
 
 section {
@@ -30,15 +35,41 @@ section {
   margin: auto;
 }
 
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
 .gallery img {
   width: 100%;
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+.socials a {
+  color: #111;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #e91e63;
 }
 
 footer {
