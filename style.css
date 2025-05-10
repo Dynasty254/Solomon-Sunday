@@ -60,7 +60,7 @@ h2 {
   transition: color 0.3s ease;
 }
 .socials a:hover {
-  color: #e91e63;
+  color: #ffa500;
 }
 footer {
   background: #111;
@@ -82,7 +82,7 @@ input, textarea {
   font-size: 1rem;
 }
 button[type="submit"] {
-  background: #e91e63;
+  background: #ffa500;
   color: white;
   border: none;
   padding: 12px;
@@ -108,7 +108,7 @@ button[type="submit"]:hover {
   z-index: 999;
 }
 #backToTop:hover {
-  background: #e91e63;
+  background: #ffa500;
 }
 #darkToggle {
   position: fixed;
@@ -132,5 +132,5 @@ body.dark footer {
 }
 body.dark nav a,
 body.dark .socials a {
-  color: #e91e63;
+  color: #ffa500;
 }
