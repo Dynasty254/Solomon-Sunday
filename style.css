@@ -78,3 +78,59 @@ footer {
   text-align: center;
   padding: 20px;
 }
+/* Back to Top */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+#backToTop:hover {
+  background: #e91e63;
+}
+
+/* Dark Mode */
+#darkToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 999;
+}
+body.dark {
+  background: #111;
+  color: #eee;
+}
+body.dark header,
+body.dark footer {
+  background: #222;
+}
+body.dark nav a,
+body.dark .socials a {
+  color: #e91e63;
+}
+
+/* Slideshow */
+#slideshow {
+  max-width: 100%;
+  margin: 20px 0;
+  position: relative;
+}
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
